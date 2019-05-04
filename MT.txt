@@ -1,0 +1,6 @@
+安装温度监控
+sudo apt update
+sudo apt install lm-sensors
+sudo sensors-detect
+sensors
+sudo apt install psensor
