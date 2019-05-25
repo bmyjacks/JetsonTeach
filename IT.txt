@@ -1,0 +1,24 @@
+sudo nano ~./bashrc
+
+在末尾加上:
+export PATH=/usr/local/cuda-10.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export CUDA_HOME=$CUDA_HOME:/usr/local/cuda-10.0
+
+source ~./bashrc
+nvcc -V
+如输出CUDA版本信息正确，添加变量完成
+
+sudo apt install python3-pip python3-dev
+python3 -m pip install --upgrade pip
+sudo nano /usr/bin/pip3
+
+
+更改为:
+from pip import __main__
+if __name__ == '__main__':
+    sys.exit(__main__._main())
+
+sudo apt-get install python3-pip libhdf5-serial-dev hdf5-tools
+pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.5 --user
+pip3 install keras --user
