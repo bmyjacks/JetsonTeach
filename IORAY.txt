@@ -1,0 +1,7 @@
+用ssh链接上树莓派，
+在终端输入：
+wget http://download.oray.com/peanuthull/embed/phddns_3.0.3_systemd.deb
+等待下载完毕后，输入：
+sudo dpkg -i phddns_3.0.3_systemd.deb
+等待安装完毕后，记下SN。
+登陆b.oray.com进行管理。
