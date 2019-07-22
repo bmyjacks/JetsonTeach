@@ -1,0 +1,9 @@
+sudo apt update && apt install nano
+
+cd ~
+sudo nano .pip/pip.conf
+
+改成:
+
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
