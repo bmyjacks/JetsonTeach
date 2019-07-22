@@ -1,4 +1,5 @@
-sudo apt update && apt install nano
+sudo apt updat
+sudo apt install nano
 
 cd ~
 sudo nano .pip/pip.conf
