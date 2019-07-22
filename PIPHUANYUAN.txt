@@ -2,6 +2,7 @@ sudo apt update
 sudo apt install nano
 
 cd ~
+mkdir .pip
 sudo nano .pip/pip.conf
 
 改成:
