@@ -19,7 +19,7 @@ from pip import __main__
 if __name__ == '__main__':
     sys.exit(__main__._main())
 
-sudo apt-get install python3-pip libhdf5-serial-dev hdf5-tools
-pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.5 --user
+sudo apt-get install  python3 python3-pip libhdf5-serial-dev hdf5-tools
+sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
 pip3 install numpy --user
 pip3 install keras --user
