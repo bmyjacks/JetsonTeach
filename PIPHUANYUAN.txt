@@ -1,4 +1,4 @@
-sudo apt updat
+sudo apt update
 sudo apt install nano
 
 cd ~
